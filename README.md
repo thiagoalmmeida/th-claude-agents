@@ -1,33 +1,73 @@
-# th-claude-skills
+# Agent Craft
 
-Skills para o Claude criadas por [Thiago Almeida](https://github.com/thiagoalmmeida) — Product Designer com foco em AI-Driven Design.
+Um agente que cria outros agentes.
 
-Cada skill é um arquivo de instrução que define como o Claude se comporta em contextos específicos de produto e design. Não são prompts genéricos — são parceiros com identidade, método e limites claros.
-
----
-
-## Skills disponíveis
-
-| Skill | Descrição | Download |
-|-------|-----------|----------|
-| [pm-partner](./pm-partner/SKILL.md) | PM sênior como parceiro estratégico, com Shape Up como base de raciocínio | [Download](https://raw.githubusercontent.com/thiagoalmmeida/th-claude-skills/main/pm-partner/SKILL.md) |
+O Agent Craft transforma uma necessidade descrita em linguagem natural em um agente completo e funcional, com 8 seções obrigatórias, pronto para ser colado nas instructions de um Project no Claude.ai.
 
 ---
 
-## Como usar uma skill no Claude
+## O que é
 
-1. Acesse o link de download da skill
-2. Copie o conteúdo do arquivo
-3. No Claude, vá em **Settings → Skills** e crie uma nova skill
-4. Cole o conteúdo e salve
-5. Ative a skill na conversa com: `Use a skill [nome-da-skill].`
+O Agent Craft é um agente de IA construído para o Claude.ai. Ele não produz prompts genéricos — produz agentes com identidade, filosofia, protocolo de colaboração e estrutura de output definidos.
+
+Desenvolvido a partir da prática de construir sistemas multi-agente no projeto Foundi.
 
 ---
 
-## Sobre
+## Como usar
 
-Sou Product Designer com 15 anos de experiência em produtos digitais B2C e B2B no Brasil e América Latina. Trabalhei na OLX, Nuvemshop, Zoom & Buscapé, Oi e Petrobras.
+### 1. Crie um Project no Claude.ai
+Acesse [claude.ai](https://claude.ai) e crie um novo Project.
 
-Meu foco atual é AI-Driven Design — usar IA para elevar a qualidade do processo de produto e design, não só acelerar entrega.
+### 2. Cole as instructions
+Abra as configurações do Project, vá em **Instructions** e cole o conteúdo do arquivo `agent-craft-instructions.md`.
 
-[LinkedIn](https://www.linkedin.com/in/thiagoalmmeida)
+### 3. Descreva o que você precisa
+Abra um chat dentro do Project e descreva em linguagem natural o agente que você quer criar. Exemplo:
+
+> "Quero um agente que me ajude a preparar entrevistas de emprego em inglês."
+
+### 4. Responda as perguntas
+O Agent Craft vai fazer no máximo 3 perguntas para entender o contexto antes de escrever.
+
+### 5. Copie o resultado
+O agente gerado vem com as 8 seções prontas para colar. Crie um novo Project, cole nas instructions e seu agente está pronto.
+
+---
+
+## Estrutura do repositório
+
+```
+agent-craft/
+├── README.md                        ← este arquivo
+└── agent-craft-instructions.md      ← instructions para colar no Claude.ai
+```
+
+---
+
+## As 8 seções de um agente
+
+Todo agente gerado pelo Agent Craft segue essa estrutura:
+
+| # | Seção | O que define |
+|---|-------|-------------|
+| 1 | Identidade | Quem é o agente, papel e propósito |
+| 2 | Contexto | Quem é o usuário, o que faz e o que não faz |
+| 3 | Filosofia | Princípios que guiam as decisões |
+| 4 | Framework de decisão | Critérios antes de responder |
+| 5 | Processo | Como executa o trabalho |
+| 6 | Comunicação | Tom, formato e template de output |
+| 7 | Colaboração | Peer collaboration protocol |
+| 8 | Gestão do fluxo | Ordem de operações e condições de desvio |
+
+Tira uma, o agente perde coerência.
+
+---
+
+## Créditos
+
+Estrutura de 8 seções desenvolvida por Thiago Almeida.
+
+---
+
+*Português do Brasil por padrão. O agente produzido pode estar em qualquer idioma.*
